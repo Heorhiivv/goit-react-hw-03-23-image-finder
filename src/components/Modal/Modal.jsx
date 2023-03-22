@@ -20,6 +20,9 @@ export default class Modal extends Component {
       this.props.onClose();
     }
   };
+  modalStatus = () => {
+    this.setState({ showModal: this.props.isModalShown });
+  };
   render() {
     return createPortal(
       <div className="Overlay" onClick={this.handleBackDropClick}>

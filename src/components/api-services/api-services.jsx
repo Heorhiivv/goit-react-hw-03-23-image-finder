@@ -10,6 +10,6 @@ export const getImages = async (searchQuery, page) => {
     );
     return gallery.data.hits;
   } catch (error) {
-    console.log(error.message);
+    console.log(error);
   }
 };

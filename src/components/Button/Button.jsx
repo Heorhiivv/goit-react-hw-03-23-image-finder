@@ -1,12 +1,12 @@
 import React from 'react';
 
-export const LoadMoreBtn = ({ onLoadMore, isSubmitting }) => {
+export const LoadMoreBtn = ({ loadMore, isSubmitting }) => {
   return (
     <button
       type="button"
       className="Button"
-      // disabled={isSubmitting}
-      onClick={onLoadMore}
+      disabled={isSubmitting}
+      onClick={loadMore}
     >
       Load More
     </button>
